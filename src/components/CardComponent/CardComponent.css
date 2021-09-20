@@ -1,0 +1,244 @@
+.App-body {
+    background-color: #F9FBFD;
+    height: calc(100vh);
+    /* font-family: 'Ubuntu' ,sans-serif; */
+}
+
+.titleText{
+    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;
+    color: #0E2748;
+    line-height: 41px;
+    font-style: normal;
+}
+
+.bodyText{
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 22px;
+    color: #4F4F4F;
+}
+
+.h3-title{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 17px;
+}
+
+.custom-title{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 17px;
+    color: rgba(0,0, 0, 0.48);
+}
+  
+.pt-48 {
+    margin-top: 48px;
+}
+
+.m-item {
+    width: 1120px;
+}
+
+.flex {
+    display: flex;
+}
+  
+.row-center {
+    justify-content: center;
+}
+  
+.col-center {
+    align-items: center;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.ml-30{
+    margin-left: 30px;
+}
+
+.mr-30{
+    margin-right: 30px;
+}
+
+.color-blue {
+    color: #00A3FF;
+}
+
+.hv:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.hvn:hover {
+    cursor:not-allowed;
+}
+
+.hv:active {
+    opacity: 1;
+}
+
+.mt-30 {
+    margin-top: 30px;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 17px;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.ml-24 {
+    margin-left: 24px;
+}
+
+.fw-500 {
+    font-weight: bold;
+    font-family: 'Ubuntu',sans-serif;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 17px;
+    color: #4F4F4F;
+}
+
+.box {
+    width: 30px;
+    height: 30px;
+    background-color: #00A3FF;
+    position: relative;
+    border: 4px solid #E0E0E0;
+}
+
+.box:hover {
+    cursor: pointer;
+}
+
+.box:active {
+    opacity: .8;
+}
+
+.absolute {
+    position: absolute;
+    top: 11px;
+    left: -37px;
+    z-index: 100;
+}
+
+.mt-8 {
+    margin-top: 8px;
+}
+
+.my-drawer .ant-tabs-content-holder {
+    height: calc(100vh);
+}
+
+.my-drawer .ant-drawer-content-wrapper{
+    height: calc(100vh);
+}
+
+.c-bm {
+    color: #00A3FF;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.col-center {
+    align-items: center;
+}
+
+.color-gray {
+    color: gray;
+}
+
+.mt-24 {
+    margin-top: 24px;
+}
+
+.mb-24 {
+    margin-bottom: 24px;
+}
+
+.m-line {
+    padding-bottom: 24px;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.App .ant-card-head {
+    border-bottom: none;
+}
+.App .ant-tabs-nav-wrap::before {
+    width: 0;
+}
+
+.App .ant-tabs-nav-list {
+    width: 100%;
+}
+
+.App .ant-tabs-nav-list > .ant-tabs-tab{
+    width: 50%;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+.App .ant-drawer-body{
+    padding: 0;
+}
+
+.App .ant-tabs-content-holder{
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.App .ant-card-head-title {
+    border-bottom: 1px solid #E0E0E0;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.m-card-shadow {
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.04);
+}
+
+.m-tab-icon > svg{
+    width: 20px;
+    height: 21px;
+}
+
+.App .ant-drawer-content, .App .ant-drawer-content-wrapper{
+    border-top-left-radius: 8px;
+}
+
+.App .ant-drawer-content-wrapper {
+    top: 87px;
+}
+
+.App .ant-drawer-body {
+    overflow-y: hidden;
+}
+
+.enhance.h-115 {
+    height: 115px;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 17px;
+    color: rgba(0,0, 0, 0.48);
+}

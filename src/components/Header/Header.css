@@ -1,0 +1,26 @@
+.App-header {
+    height: 90px;
+    background-color: white;
+}
+
+.pt-33 {
+    padding-top: 33px;
+}
+
+.alph {
+    margin-left: 24px;
+}
+
+.red {
+  color: #ED186D;
+  font-weight: 800;
+  letter-spacing: 2px;
+  font-size:38px;
+}
+
+.black {
+  color: #000000;
+  font-weight: 300;
+  letter-spacing: 2px;
+  font-size:38px;
+}

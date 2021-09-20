@@ -1,13 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
-import 'antd/dist/antd.css';
-import CardDetails from './components/Card';
+import CardComponent from './components/CardComponent/CardComponent';
+import Header from './components/Header/Header';
 
 function App() {
   return (
     <div className="App">
-      <CardDetails />
-    </div>
+      <div className="m-app-body">
+        <Header />
+        <CardComponent />
+     </div>
+   </div> 
   );
 }
 

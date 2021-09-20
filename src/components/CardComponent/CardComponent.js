@@ -41,7 +41,7 @@ const CardComponent = () => {
     const [updateContent, setUpdateContent] = useState(false);
 
     // use useEffect() to control the drawer close,
-    // addEventListenser to listen the 'click' action and trigger the setVisible function,
+    // addEventListenser() to listen the 'click' action and trigger the setVisible function,
     // user can click anywthere of the website to close the drawer
     useEffect(() => {
         document.addEventListener('click', (e) => {
@@ -54,21 +54,22 @@ const CardComponent = () => {
         });
     }, [visible]);
 
-    // handleClick() function to handle the Eddit Button 
+    
+    // This is a advanced solution to constrain the user's input, 
+    // Due to the time limit and in order to delivery a stable version for presentation, i did not change the function.
+    // if user forgot to input the title, it will restore the previous content
     // const deepCopy = JSON.parse(JSON.stringify(item)); 
-    // JSON.parse() to make a deep copy of the current text,
-    // if user forgot to input the title, it will restore the ex-text
     // setCurrentItemBackUp(deepCopy);
+    // JSON.parse() to make a deep copy of the current text
+
+    
+    // handleClick() function to handle the Eddit Button 
     const handleClick = (item, e) => {
         setCurrentItem(item);  
         setVisible(!visible);
         e.stopPropagation();
     }
 
-    // error message 
-    // const error = (errorMessage) => {
-    //     message.error(errorMessage);
-    // };
 
     // copy object by click Copy button
     const copyItem = (item) => {
@@ -125,6 +126,7 @@ const CardComponent = () => {
                                 className="custom-title"
                                 placeholder="Enter custom title"
                                 onChange={(e) => {
+                                    // Advanced solution
                                     // check if e.target.value is empty
                                     // if is empty then propt an error message 
                                     // otherwise update the title text
@@ -137,6 +139,7 @@ const CardComponent = () => {
                                     //     setUpdateContent(!updateContent);
                                     // }
 
+                                    // But for presentation purpose, i keep the current verison unchanged.
                                     currentItem.titleText = e.target.value;
                                     setUpdateContent(!updateContent);
                                 }}
@@ -147,15 +150,9 @@ const CardComponent = () => {
                                 className="enhance h-115"
                                 placeholder="Enter custom text"
                                 onChange={(e) => {
-                                    // if (e.target.value === '') {
-                                    //     error('Body Text can not be empty')
-                                    //     currentItem.bodyText = e.target.value;
-                                    //     setUpdateContent(!updateContent);
-                                    // } else {
-                                    //     currentItem.bodyText = e.target.value;
-                                    //     setUpdateContent(!updateContent);
-                                    // }
-
+                                    
+                                    // Same consideration as above reasons.
+                                    // keep the current verison
                                     currentItem.bodyText = e.target.value;
                                     setUpdateContent(!updateContent);
                                 }}
@@ -192,7 +189,7 @@ const CardComponent = () => {
                                         <div
                                             className="box mt-8"
                                             onClick={(e) => {
-                                                // if currentColor is equal to target then set color to current text
+                                                // if current color is equal to target then set color to current text
                                                 if (e.currentTarget === e.target) {
                                                     setBodySizeColor(false);
                                                     setRadiusSizeColor(false);
@@ -208,7 +205,7 @@ const CardComponent = () => {
                                                     <BlockPicker
                                                         color={currentItem.titleColor}
                                                         onChange={(color) => {
-                                                            // set currentText color to the picked color
+                                                            // set current text color to the picked color
                                                             currentItem.titleColor = color.hex;
                                                             setUpdateContent(!updateContent)
                                                         }}
